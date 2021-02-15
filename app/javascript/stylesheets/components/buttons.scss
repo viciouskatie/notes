@@ -1,0 +1,6 @@
+.btn-nav {
+   @apply font-semibold text-lg rounded p-1 cursor-pointer bg-gray-500 no-underline mb-4;
+}
+.btn-nav:hover {
+   @apply bg-gray-600;
+}

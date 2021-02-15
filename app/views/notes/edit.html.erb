@@ -1,0 +1,7 @@
+<h1 class="text-2lg font-bold mb-4">Editing: <%= @note.title || @note.id %></h1>
+
+
+<%= render 'form', note: @note %>
+
+<%= link_to 'Show', @note %> |
+<%= link_to 'Back', notes_path %>

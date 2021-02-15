@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Notes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600,700' %>
 
-  <body>
-  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body class="mx-auto mt-0 font-sans">
+
+    <% flash.each do |type, message| %>
+    <% if type == "alert" %>
+    <div class="bg-red-500">
+        <div class="px-2 mx-auto py-4 text-white text-center font-medium font-sans">
+            <% message %>
+        </div>
+    </div>
+    <% end %>
+
+    <% if type == "notice" %>
+    <div class="bg-green-500">
+        <div class="px-2 mx-auto py-4 text-white text center font-medium font-sans">
+            <%= message %>
+        </div>
+    </div>
+    <% end %>
+    <% end %>
+    <div>
+        <ul class="nav">
+            <nav class="py-2" role="navigation" aria-label="main navigation">
+                <div class="flex flex-wrap items-center justify-center lg:content-center px-4 lg:px-6">
+
+                    <div class="justify-end">
+
+                        <h1 class="text-lg pr-2 font-bold justify-start justify-center pb-8">Notes</h1>
+                        <ul>
+                            
+                            <li class="btn-nav">
+                                <%= link_to "Log in", new_user_session_path unless user_signed_in? %></li>
+                            <% if user_signed_in? %>
+                               <li class="btn-nav">
+                                <%= link_to "Logout", destroy_user_session_path, :method => :delete if user_signed_in?  %>
+                                </li>
+                            <% end %>
+                            <li class="btn-nav">
+                                <%= link_to "Sign Up", new_user_registration_path unless user_signed_in? %></li>
+
+                            <% if user_signed_in? %>
+                            <div class="mt-4">
+                                <% if current_user.notes.any? %>
+                                    <% current_user.notes.each do |note| %>
+                                    <div>
+                                        <p>
+                                            <%= link_to note do %>
+                                            <%= note.title %>
+                                            <% end %>
+                                        </p>
+
+                                    </div>
+                                    <% end %>
+                                <% end %>
+
+                            </div>
+
+                            <% end %>
+
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </ul>
+    </div>
+
+
+
     <%= yield %>
-  </body>
+</body>
+
 </html>

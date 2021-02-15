@@ -1,0 +1,48 @@
+<h1 class="text-2xl mb-4">Notes Taken</h1>
+<div>
+    <%= link_to new_note_path, class: "flex flew-row" do %>
+        <p class="mr-2">Create Note</p> <%= render_svg 'icons/create' %>
+    <% end %>
+</div>
+
+ 
+<div>
+    <div>
+        <% @notes.each do |note| %>
+        <div class="bg-gray-200">
+            <!-- Start of component -->
+            <div class="max-w-sm bg-white border-2 border-gray-300 p-6 rounded-md tracking-wide shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="leading-5 ml-6 sm">
+                        <h4 class="text-xl font-semibold"><%= note.title %></h4>
+                        <h5 class="text-sm font-semibold text-blue-600"><%= note.created_at %></h5>
+                    </div>
+                </div>
+                <div>
+                    <q class="italic text-gray-600"><%= note.body %></q>
+
+                </div>
+                <div class="flex justify-around mt-4">
+                    <div class="item2">
+                        <p><%= link_to note do %>
+                            <%= render_svg 'icons/show' %> <% end %></p>
+                    </div>
+
+                    <div class="item3">
+                        <p><%= link_to edit_note_path(note) do %>
+                            <%= render_svg 'icons/edit' %> <% end %></p>
+                    </div>
+
+                    <div class="item4">
+                        <p><%= link_to note, method: :delete, data: { confirm: 'Delete this note?' } do %>
+                            <%= render_svg 'icons/destroy' %> <% end %></p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of component -->
+        </div>
+        <% end %>
+    </div>
+</div>
+
+</div>
