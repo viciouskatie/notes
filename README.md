@@ -52,4 +52,4 @@ Nav bar sign up
 Styling edit & logout
 
 ### Step 7)
-Move to Postgres, deploy at Heroku# notes
+Move to Postgres, deploy at Heroku# notesx
