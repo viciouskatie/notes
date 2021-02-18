@@ -240,7 +240,6 @@ DEPENDENCIES
   spring
   sqlite3
   turbolinks (~> 5)
-  tzinfo-data
   uglifier
   web-console (>= 4.1.0)
   webdrivers
@@ -248,3 +247,6 @@ DEPENDENCIES
 
 RUBY VERSION
    ruby 2.6.6p146
+
+BUNDLED WITH
+   2.2.8
