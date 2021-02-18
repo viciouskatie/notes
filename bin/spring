@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 if !defined?(Spring) && [nil, "development", "test"].include?(ENV["RAILS_ENV"])
-  gem "bundler", '~> 2.0.2'
+  gem "bundler", '~> 2.1.4'
   require "bundler"
 
   # Load Spring without loading other gems in the Gemfile, for speed.
