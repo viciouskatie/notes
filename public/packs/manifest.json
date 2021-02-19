@@ -1,31 +1,18 @@
 {
-  "application.js": "/packs/js/application-c1a2c56148d6d78d313a.js",
+  "application.css": "/packs/css/application-b4cc00b9.css",
+  "application.js": "/packs/js/application-4bc65316ba6ca6106dc5.js",
+  "application.js.map": "/packs/js/application-4bc65316ba6ca6106dc5.js.map",
   "entrypoints": {
     "application": {
-      "assets": {
-        "js": [
-          "/packs/js/runtime-dfcf6a330bacaa6d8945.js",
-          "/packs/js/208-7c317c9e7173be1ff7d5.js",
-          "/packs/js/application-c1a2c56148d6d78d313a.js"
-        ]
-      }
+      "css": [
+        "/packs/css/application-b4cc00b9.css"
+      ],
+      "js": [
+        "/packs/js/application-4bc65316ba6ca6106dc5.js"
+      ],
+      "js.map": [
+        "/packs/js/application-4bc65316ba6ca6106dc5.js.map"
+      ]
     }
-  },
-  "js/208-7c317c9e7173be1ff7d5.js": "/packs/js/208-7c317c9e7173be1ff7d5.js",
-  "js/208-7c317c9e7173be1ff7d5.js.br": "/packs/js/208-7c317c9e7173be1ff7d5.js.br",
-  "js/208-7c317c9e7173be1ff7d5.js.gz": "/packs/js/208-7c317c9e7173be1ff7d5.js.gz",
-  "js/208-7c317c9e7173be1ff7d5.js.map": "/packs/js/208-7c317c9e7173be1ff7d5.js.map",
-  "js/208-7c317c9e7173be1ff7d5.js.map.br": "/packs/js/208-7c317c9e7173be1ff7d5.js.map.br",
-  "js/208-7c317c9e7173be1ff7d5.js.map.gz": "/packs/js/208-7c317c9e7173be1ff7d5.js.map.gz",
-  "js/application-c1a2c56148d6d78d313a.js.br": "/packs/js/application-c1a2c56148d6d78d313a.js.br",
-  "js/application-c1a2c56148d6d78d313a.js.gz": "/packs/js/application-c1a2c56148d6d78d313a.js.gz",
-  "js/application-c1a2c56148d6d78d313a.js.map": "/packs/js/application-c1a2c56148d6d78d313a.js.map",
-  "js/application-c1a2c56148d6d78d313a.js.map.br": "/packs/js/application-c1a2c56148d6d78d313a.js.map.br",
-  "js/application-c1a2c56148d6d78d313a.js.map.gz": "/packs/js/application-c1a2c56148d6d78d313a.js.map.gz",
-  "js/runtime-dfcf6a330bacaa6d8945.js.br": "/packs/js/runtime-dfcf6a330bacaa6d8945.js.br",
-  "js/runtime-dfcf6a330bacaa6d8945.js.gz": "/packs/js/runtime-dfcf6a330bacaa6d8945.js.gz",
-  "js/runtime-dfcf6a330bacaa6d8945.js.map": "/packs/js/runtime-dfcf6a330bacaa6d8945.js.map",
-  "js/runtime-dfcf6a330bacaa6d8945.js.map.br": "/packs/js/runtime-dfcf6a330bacaa6d8945.js.map.br",
-  "js/runtime-dfcf6a330bacaa6d8945.js.map.gz": "/packs/js/runtime-dfcf6a330bacaa6d8945.js.map.gz",
-  "runtime.js": "/packs/js/runtime-dfcf6a330bacaa6d8945.js"
+  }
 }
