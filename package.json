@@ -28,10 +28,10 @@
   "repository": "https://github.com/viciouskatie/notes.git",
   "author": "viciouskatie <kikat31@yahoo.com>",
   "license": "MIT",
-  "babel": {
-    "presets": ["./node_modules/@rails/webpacker/package/babel/preset.js"]
-  },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "babel": {
+    "presets": ["./node_modules/@rails/webpacker/package/babel/preset.js"]
+  }
 }
