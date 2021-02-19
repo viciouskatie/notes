@@ -17,11 +17,10 @@
     "webpack-dev-server": "^3.11.2"
   },
   "version": "0.1.0",
-  "devDependencies": {}, 
+  "devDependencies": {},
   "engines": {
     "node": "14.X"
   },
-
   "main": "index.js",
   "repository": "https://github.com/viciouskatie/notes.git",
   "author": "viciouskatie <kikat31@yahoo.com>",
