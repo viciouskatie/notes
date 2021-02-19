@@ -1,12 +1,10 @@
 body {
-  padding-left: 25em;
   font-size: 100%;
   background-color:#E5E7EB;
 }
 .nav {
-  height: 100%; /* Full-height */
+  height: 100vh; /* Full-height */
   width: 20em; /* Set the width of the sidebar */
-  position: fixed;
   z-index: 1; /* Stay over banner */
   top: 0; /* Stay at the top */
   left: 3em;
